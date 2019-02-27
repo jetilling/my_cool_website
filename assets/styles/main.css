@@ -66,10 +66,12 @@
   display: inline-block;
   color: mintcream;
   text-decoration: none;
+  font-size: 20px;
 }
 
 .links a:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .cover {

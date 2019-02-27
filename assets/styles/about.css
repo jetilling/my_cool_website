@@ -1,0 +1,10 @@
+.about-header-container {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  width: 250px;
+}

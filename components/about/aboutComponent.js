@@ -12,7 +12,12 @@ class AboutComponent {
    */
   render() {
     this.util.renderHtml("main",
-      `<h1>Hi! I'm Josh</h1>`
+      `<div class="about-header-container">
+        <img class="profile-img" src="./assets/images/josh.png" />
+        <div>
+          <h1>Hi! I'm Josh</h1>
+        </div>
+      </div>`
     )
   }
 
