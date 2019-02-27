@@ -1,0 +1,94 @@
+.navbar {
+  background: url('../images/cats.jpg');
+  background-position: 50px;
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #999;
+  z-index: 1;
+  height: 5vh;
+  width: 100vw;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.main {
+  width: 100vw;
+  height: 95vh;
+  display: flex;
+}
+
+.sidebar {
+  background: #374140;
+  height: 95vh;
+  width: 25vw;
+  border-right: 1px solid black;
+  box-shadow: inset -7px 0 18px -7px #000000;
+}
+
+.sidebar-title {
+  display: inline-block;
+  margin: 10px;
+  font-size: 40px;
+  color: mintcream;
+  font-family: 'Cutive Mono', monospace;
+}
+
+#subtitle {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-family: 'Cutive Mono', monospace;
+  color: mintcream;
+}
+
+.links {
+  font-family: 'Cutive Mono', monospace;
+  margin-left: 10px;
+  width: 8vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.links a {
+  display: inline-block;
+  color: mintcream;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.cover {
+  background: white;
+  width: 75vw;
+  height: 95vh;
+  border-radius: 2px;
+}
+
+.sidebar-search {
+  margin-left: 10px;
+}
+
+.sidebar-search-btn {
+  margin-left: 10px;
+}
+
+@media(max-width: 320px){
+  .sidebar {
+    width: 100vw;
+  }
+}

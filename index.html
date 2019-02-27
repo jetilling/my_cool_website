@@ -4,12 +4,33 @@
     <meta charset="UTF-8">
     <title>jetilling</title>
     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/fonts.css">
     <link rel="stylesheet" href="./assets/styles/main.css">
             
   </head>
   <body>  
-      <h1>My Cool Website!</h1>
-      <div id="main"></div>
+    <div class="navbar"></div>
+    <div class="overlay"></div>
+    <section class="main">
+      <section class="sidebar">
+        <p class="sidebar-title">jetilling:  </p>
+        <p id="subtitle">(My Cool Website}</p>
+
+        <nav class="links">
+          <a id="about-link">About</a>
+          <a id="contact-link">Contact</a>
+          <a>News</a>
+          <a>Write!</a>
+        </nav>
+        <input class="sidebar-search" type="text" name="" value="">
+        <button type="button" name="button" class="sidebar-search-btn">Search</button>
+      </section>
+      <section class="cover">
+        <div id="main"></div>
+      </section>
+    </section>
+      
   </body>
   <script src="./dist/website.bundle.js"></script>
 </html>
