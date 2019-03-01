@@ -7,4 +7,16 @@
 
 .profile-img {
   width: 250px;
+  height: 250px;
+}
+
+.about-title-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-title {
+  font-family: 'Questrial', sans-serif;
+  font-size: 60px;
 }

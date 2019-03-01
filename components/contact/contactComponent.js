@@ -1,8 +1,6 @@
 class ContactComponent {
   
-  constructor(util) {
-    this.util = util
-  }
+  constructor() {}
 
   /**
    * Render
@@ -11,9 +9,15 @@ class ContactComponent {
    *              It calls renderHtml, passing in the html to be rendered
    */
   render() {
-    this.util.renderHtml("main",
-      `<h1>Contact Me!</h1>`
-    )
+    return ["main",
+      `<div class="contact-main">
+        <div class="face-container">
+          <p class="face">(ಥ﹏ಥ)</p>
+          <p class="face-text">You're Going to Contact Me! Oh, Hallelujah</p>
+          <span class="face-text">My email is jetilling [at] gmail.com</span>
+        </div>
+      </div>`
+    ]
   }
 
 }

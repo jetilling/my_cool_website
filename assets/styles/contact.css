@@ -1,0 +1,25 @@
+.contact-main {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.face-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.face {
+  font-family: 'Questrial', sans-serif;
+  font-size: 100px;
+  margin-bottom: 20px;
+  color: #414C4B
+}
+
+.face-text {
+  font-family: 'Cutive Mono', monospace;
+  color: #414C4B;
+}

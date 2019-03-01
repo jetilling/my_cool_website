@@ -1,8 +1,6 @@
 class AboutComponent {
   
-  constructor(util){
-    this.util = util
-  }
+  constructor(){}
 
   /**
    * Render
@@ -11,14 +9,19 @@ class AboutComponent {
    *              It calls renderHtml, passing in the html to be rendered
    */
   render() {
-    this.util.renderHtml("main",
+    return ['main',
       `<div class="about-header-container">
-        <img class="profile-img" src="./assets/images/josh.png" />
-        <div>
-          <h1>Hi! I'm Josh</h1>
+        <img class="profile-img" src="./assets/images/josh_small.png" />
+        <div class="about-title-container">
+          <h1 class="about-title">Hi! I'm Josh</h1>
+        </div>
+      </div>
+      <div class="about-body">
+        <div class="about-body-content">
+
         </div>
       </div>`
-    )
+    ]
   }
 
 }

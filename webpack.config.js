@@ -17,6 +17,9 @@ module.exports = {
         query: {
           presets: [
             "@babel/preset-env"
+          ],
+          plugins: [
+            "@babel/plugin-proposal-class-properties"
           ]
         }
       }
