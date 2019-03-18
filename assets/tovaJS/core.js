@@ -1,5 +1,6 @@
 const util = require('./utilities.js');
 const $ = require('./eventHandlers.js');
+const renderer = require('./render.js');
 
 class Tova {
 
@@ -11,11 +12,13 @@ class Tova {
   /**
    * Render Html
    * 
-   * @description Sets the html in the #main div
+   * @description Sets the html in the designated element
    * @param html 
    */
-  renderHtml (element, htmlString, data) {
-    $.grabById(element).innerHTML = this.template(htmlString, data)
+  renderDOMTree (element, DOMObject) {
+    let html = renderer.render(DOMObject)
+    console.log(html)
+    this.mount(html, document.getElementById(element));
   }
 
   //----------------{ ROUTER }----------------//
@@ -40,7 +43,9 @@ class Tova {
       if (this.el && route.controller) {
         // Render route template
         let dataArray = route.controller.render()
-        this.renderHtml(dataArray[0], dataArray[1], route.controller)
+        let data = route.controller
+        console.log(dataArray)
+        this.renderDOMTree(dataArray[0], dataArray[1])
       }
   }
 
@@ -62,23 +67,31 @@ class Tova {
   /**
    * 
    */
-  template = (templateStr, data) => {
-    let fn = new Function("obj",
-      "var p=[],print=function(){p.push.apply(p,arguments);};" +
-      // Introduce the data as local variables using with(){}
-      "with(obj){p.push('" +
-      templateStr
-        .replace(/[\r\t\n]/g, " ")
-        .split("<%").join("\t")
-        .replace(/((^|%>)[^\t]*)'/g, "$1\r")
-        .replace(/\t=(.*?)%>/g, "',$1,'")
-        .split("\t").join("');")
-        .split("%>").join("p.push('")
-        .split("\r").join("\\'")
-      + "');}return p.join('');");
+  template (templateStr, data) {
+    let functionBody = "var p=[],print=function(){p.push.apply(p,arguments);};" +
+    // Introduce the data as local variables using with(){}
+    "with(obj){p.push('" +
+    templateStr
+      .replace(/[\r\t\n]/g, " ")
+      .split("{{").join("\t")
+      .replace(/((^|}})[^\t]*)'/g, "$1\r")
+      .replace(/\t(.*?)}}/g, "',$1,'")
+      .split("\t").join("');")
+      .split("}}").join("p.push('")
+      .split("\r").join("\\'")
+    + "');}return p.join('');"
+
+    console.log(functionBody)
+
+    let fn = new Function("obj", functionBody);
 
     return data ? fn( data ) : fn;
   }
+
+  mount(node, target) {
+    target.replaceWith(node);
+    return node;
+  };
 
   //----------------{ END RENDER }----------------//
 

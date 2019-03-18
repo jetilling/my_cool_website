@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .face-container {
@@ -22,4 +23,26 @@
 .face-text {
   font-family: 'Cutive Mono', monospace;
   color: #414C4B;
+}
+
+.consulting {
+
+}
+
+.consulting-image {
+  width: 40%;
+  min-width: 400px;
+}
+
+.consulting-image-container {
+  width: 40%;
+  min-width: 404px;
+  border: 2px solid;
+  border-radius: 10px;
+  box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.52);
+}
+
+.consulting-image-container:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 19px 4px rgba(0,0,0,0.52);
 }

@@ -10,17 +10,43 @@ class AboutComponent {
    */
   render() {
     return ['main',
-      `<div class="about-header-container">
-        <img class="profile-img" src="./assets/images/josh_small.png" />
-        <div class="about-title-container">
-          <h1 class="about-title">Hi! I'm Josh</h1>
-        </div>
-      </div>
-      <div class="about-body">
-        <div class="about-body-content">
-
-        </div>
-      </div>`
+      {
+        tagName: 'div',
+        attrs: {},
+        children: [
+          {
+            tagName: 'div',
+            attrs: 'about-header-container',
+            children: [
+              {
+                tagName: 'img',
+                attrs: {class: 'profile-img', src: './assets/images/josh_small.png'},
+                children: []
+              }, {
+                tagName: 'div',
+                attrs: {class: 'about-title-container'},
+                children: [
+                  {
+                    tagName: 'h1',
+                    attrs: {class: 'about-title'},
+                    children: ["Hi! I'm Josh"]
+                  }
+                ]
+              }
+            ]
+          }, {
+            tagName: 'div',
+            attrs: {class: "about-body"},
+            children: [
+              {
+                tagName: 'div',
+                attrs: 'about-body-content',
+                children: []
+              }
+            ]
+          }
+        ]
+      }
     ]
   }
 
