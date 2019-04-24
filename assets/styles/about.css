@@ -20,3 +20,34 @@
   font-family: 'Questrial', sans-serif;
   font-size: 60px;
 }
+
+.about-body-content {
+  font-family: 'Alegreya', serif;
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 25px;
+}
+
+.about-body-content h2 {
+  margin-top: 30px;
+  font-size: 30px;
+  font-family: 'Questrial', sans-serif;
+  margin-bottom: 10px;
+}
+
+.about-body-content p {
+  margin-top: 10px;
+}
+
+.about-this-site {
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 10px;
+  background: lightgoldenrodyellow;
+  margin-top: 25px;
+  /* padding-left: 5px; */
+}
+
+.about-this-site h2 {
+  margin-top: 5px;
+}

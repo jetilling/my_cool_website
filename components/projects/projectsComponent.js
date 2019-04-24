@@ -1,6 +1,8 @@
 class ProjectsComponent {
   
-  constructor() {}
+  constructor() {
+    comma = '&#39;'
+  }
 
   /**
    * Render
@@ -10,9 +12,11 @@ class ProjectsComponent {
    */
   render() {
     return ["main",
-      `<h1>Projects!</h1>
-       <span>Hmm no descriptions yet...</span>
-       <p>Don't worry! You can look at my <a href="https://github.com/jetilling">GitHub</a> for now`
+      `<h1 class="projects-main-title">Projects</h1>
+      <span class="urgent-message">I haven${comma}t quite set this up, yet..</span>
+
+       <p>Link to my github: <a href="https://github.com/jetilling">GitHub</a></p>
+      `
     ]
   }
 

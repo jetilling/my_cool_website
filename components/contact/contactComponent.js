@@ -14,7 +14,9 @@ class ContactComponent {
         <div class="face-container">
           <p class="face">(ಥ﹏ಥ)</p>
           <p class="face-text">You're Going to Contact Me! Oh, Hallelujah</p>
-          <span class="face-text">My email is jetilling [at] gmail.com</span>
+          <span class="face-text">My email is <span class="blue-text">jetilling5 [at] gmail.com</span></span>
+
+          <span class="contact-end">Talk with you soon!</span>
         </div>
       </div>`
     ]

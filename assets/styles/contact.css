@@ -20,6 +20,17 @@
 }
 
 .face-text {
-  font-family: 'Cutive Mono', monospace;
-  color: #414C4B;
+  font-family: 'Alegreya', serif;
+  /* color: #414C4B; */
+  font-size: 20px;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.contact-end {
+  font-family: 'Alegreya', serif;
+  margin-top: 60px;
+  font-size: 20px;
 }

@@ -1,0 +1,25 @@
+.blog-main-title {
+  font-family: 'Questrial', sans-serif;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.blog-subtitle {
+  margin-top: 30px;
+  font-size: 30px;
+  font-family: 'Questrial', sans-serif;
+}
+
+.blog-content {
+  font-family: 'Alegreya', serif;
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 25px;
+}
+
+.jetilling_site_image {
+  width: 500px;
+  margin-top: 20px;
+  border: 2px solid;
+  border-radius: 5px;
+}
