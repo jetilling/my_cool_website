@@ -22,7 +22,7 @@ class BlogComponent {
           on a deeper level and then showing how a particular product will help them overcome some issue in their life is 
           so exciting and fascinating to me. If that sounds weird, it${comma}s because I${comma}ve always seen marketing and selling
           as pushing some product or idea on a person that wants nothing to do with it; however, since I${comma}ve decided to 
-          study more about good marketing techniques, I${comma}ve realized there${comma} significantly more to it than that. There are
+          study more about good marketing techniques, I${comma}ve realized there${comma}s significantly more to it than that. There are
           great people out there doing great things with advertising.</p>
 
           <p class="blog-content">With all of that said, I${comma}m trying to position myself as a product for some development need. I${comma}ve
