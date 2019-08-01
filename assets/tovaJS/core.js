@@ -3,9 +3,10 @@ const $ = require('./eventHandlers.js');
 
 class Tova {
 
-  constructor() {
+  constructor(config) {
     this.routes = {}
     this.el = null
+    this.notFoundUrl = config.notFoundUrl
   }
 
   /**
@@ -34,8 +35,21 @@ class Tova {
     this.el = this.el || document.getElementById('main');
       // Current route url - removing the #
       let url = location.hash.slice(1) || '/';
+      let route;
 
-      let route = this.routes[url];
+      // Match and create a blog post url
+      if (url.match(/p\//)) {
+        let blogPath = url.split('/p/')[1]
+        let Post;
+        try {
+          Post = require(`../posts/${blogPath}.js`)
+          route = {controller: new Post()}
+        }
+        catch (e) {
+          route = this.routes[this.notFoundUrl]
+        }
+      }
+      else route = this.routes[url];
 
       if (this.el && route.controller) {
         // Render route template

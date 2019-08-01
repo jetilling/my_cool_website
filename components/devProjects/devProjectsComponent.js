@@ -1,4 +1,4 @@
-class ProjectsComponent {
+class DevProjectsComponent {
   
   constructor() {
     comma = '&#39;'
@@ -12,7 +12,7 @@ class ProjectsComponent {
    */
   render() {
     return ["main",
-      `<h1 class="projects-main-title">Projects</h1>
+      `<h1 class="projects-main-title">Dev Projects</h1>
       <span class="blue-message">Just a few things I${comma}ve been working on</span>
 
       <div class="project-item">
@@ -31,7 +31,7 @@ class ProjectsComponent {
       <div>
 
       <div class="project-item">
-        <h2>Project Builder <span class="private">[Private repo]</span></h2>
+      <h2><a href="https://github.com/jetilling/groundCtrl">GroundCtrl</a><h2>
         
         <p>Project Builder doesn${comma}t really have a name right now, but Project Builder is cool. Basicaly it${comma}s an app that
         is similar to squarespace but will build an api/database/front-to-back connections for you.</p>
@@ -68,4 +68,4 @@ class ProjectsComponent {
 
 }
 
-module.exports = ProjectsComponent
+module.exports = DevProjectsComponent
