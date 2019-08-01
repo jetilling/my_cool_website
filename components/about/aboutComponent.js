@@ -30,9 +30,9 @@ class AboutComponent {
 
           <h2>But that may not be why you${comma}re on this site right now.</h2>
 
-          <p>I${comma}m a developer! I write mostly in JavaScript (focusing on React/Angular), but am quite familiar with Python, PHP, and Golang.</p>
+          <p>I${comma}m a developer! I write mostly in JavaScript (focusing on React/Angular), but am quite familiar with Python, PHP, Golang, and Elm.</p>
 
-          <p>I${comma}ve been developing for about 3 years now, and currently work as a contractor for two different organizations. So far
+          <p>I${comma}ve been developing for about 3 years now, and currently work as a contractor. So far
           it${comma}s been a great career choice for me!</p>
 
           <p>To learn more about what I${comma}m doing development-wise, check out <a href="#/projects">this page.</a></p>

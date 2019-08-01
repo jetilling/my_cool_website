@@ -57,7 +57,7 @@ class ProjectsComponent {
         with it. PHP is something I${comma}ve picked up in the last year, and it${comma}s a great way to quickly get an app up and running. As you can
         see Golang is one of my favorites! In the past year, I${comma}ve found Docker incredibly handy, so I${comma}ve become very comfortable with it.</p>
 
-        <p>I would love to have the time and opportunity to learn Elixir/Pheonix, WASM, Elm.js (in depth), Reason, and Rust. I guess that${comma}s my
+        <p>I would love to have the time and opportunity to learn Elixir/Pheonix, Haskell, WASM, and Rust. I guess that${comma}s my
         dev wishlist.</p>
 
         <p><a href="https://github.com/jetilling">Oh, and here${comma}s a link to my Github profile</a></p>
